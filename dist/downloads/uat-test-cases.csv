@@ -1,0 +1,21 @@
+ID,Requirements,Preconditions,Steps,Expected result,Actual result,Method
+T01,R01,Fresh sample,"Submit valid title, description and controlled fields","Unique reference, Submitted status and initial event",Pass,Automated domain check
+T02,R01,Fresh sample,"Submit whitespace, short text, overlong title and invalid unit or urgency",Each fails; dataset unchanged,Pass,Automated domain check
+T03,"R01, R10",Fresh sample,Submit twice as Requester and Coordinator; attempt as Technician,Unique references; assisted intake labelled; Technician denied,Pass,Automated domain check
+T04,R02,Submitted fault,Assign Alex T. as Coordinator,"Assigned status, named owner and appended event",Pass,Automated domain check
+T05,R02,Submitted fault,Attempt empty owner and Requester assignment,Rejected; state and history unchanged,Pass,Automated domain check
+T06,R03,Submitted then assigned fault,Start work as Technician,In progress; third event,Pass,Automated domain check
+T07,R03,Submitted fault,"Attempt start, resolve, confirm and unsupported delete",Rejected; state unchanged,Pass,Automated domain check
+T08,R04,Fresh sample for each combination,Submit all four High/Standard impact and urgency combinations,"P1 4h, P2 24h, P2 24h, P3 72h",Pass,Automated domain check
+T09,R05,In progress fault,Try short evidence and wrong role; then valid resolution as Technician,Invalid attempts denied; valid resolution awaits confirmation,Pass,Automated domain check
+T10,R06,Awaiting confirmation,Attempt Technician confirmation; confirm as Requester; repeat,Only Requester closes; closedAt set; repeated confirmation denied,Pass,Automated domain check
+T11,R06,Awaiting confirmation,Reject with short then valid reason; resolve again and confirm,Short reason denied; valid rejection returns to work and preserves history; eventual closure succeeds,Pass,Automated domain check
+T12,R07,Progressed request,Read every event; attempt invalid confirmation,"Role, state and timestamp retained; invalid action adds no event",Pass,Automated domain check
+T13,R08,Seed queue and special text,"Filter Northbank; export; exercise commas, quotes, line breaks and formula prefix",Only filtered requests; CSV escaped; formula text neutralised,Pass,Automated domain check
+T14,R09,Seed queue at starting clock,Read counts; advance 24h; attempt invalid clock advance,"6 open, 2 overdue, 1 awaiting, 2 closed; overdue becomes 4; invalid advance denied",Pass,Automated domain check
+T15,R09,Seed queue,"Search Riverbend + Submitted, reference, owner and absent text",2 combined matches; reference 1; owner 2; absent text 0,Pass,Automated domain check
+T16,R01–R10,Browser preview,"Exercise submit through closure; inspect labels, keyboard and narrow-screen layout",Workflow works with no clipped essential controls,Pass,Verified submit → assign → start → resolution → reject → second resolution → confirmed closure; short resolution rejected; browser reset and reload preserved eight records; 390 px layout had no page overflow; all form fields labelled; Tab and Escape operated intake dialog. Not full WCAG or screen-reader validation.
+U01,R10,Target platform and authorised testers,"Complete submit, follow status and confirm or reject across mobile, keyboard and screen reader; assisted request enters same queue",No critical task barrier; feedback resolved,Not executed; representative users required,Planned business UAT
+U02,R11,Target platform and authorised testers,"Verify SSO; requester A cannot view or alter requester B records; technician access matches assignment; evaluate collection, logs and breach response",No unauthorised access; signed assessment and residual-risk decision,Not executable on browser-only demo,Planned business UAT
+U03,R12,Target platform and authorised testers,Apply approved retention rules; export records; restore backup; deploy and roll back; verify incident hand-off,"Evidence meets approved records, recovery and support criteria",Not executable until target platform exists,Planned business UAT
+U04,R01–R10,Target platform and authorised testers,"Repeat T01–T16 in the target platform and exercise interruption, duplicate reports and supplier hand-off",All Must requirements pass; no open Severity 1 or 2 defects,Planned; no business acceptance claimed,Planned business UAT

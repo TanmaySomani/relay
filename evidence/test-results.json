@@ -1,0 +1,126 @@
+{
+  "executedOn": "2026-10-09",
+  "scope": "Self-executed prototype domain tests; not business UAT or production assurance",
+  "results": [
+    {
+      "id": "T01",
+      "name": "Valid fault creates a Submitted request and initial event",
+      "requirements": "R01",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.431Z"
+    },
+    {
+      "id": "T02",
+      "name": "Invalid and whitespace input rejected without saving",
+      "requirements": "R01",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.431Z"
+    },
+    {
+      "id": "T03",
+      "name": "Unique references and assisted intake",
+      "requirements": "R01, R10",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.431Z"
+    },
+    {
+      "id": "T04",
+      "name": "Coordinator assignment records owner and event",
+      "requirements": "R02",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.431Z"
+    },
+    {
+      "id": "T05",
+      "name": "Empty owner and wrong-role assignment fail atomically",
+      "requirements": "R02",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T06",
+      "name": "Assigned fault can start only with Technician role",
+      "requirements": "R03",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T07",
+      "name": "Skipped or unknown transitions leave data unchanged",
+      "requirements": "R03",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T08",
+      "name": "All four priority combinations and target intervals",
+      "requirements": "R04",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T09",
+      "name": "Resolution requires adequate evidence and proper role",
+      "requirements": "R05",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T10",
+      "name": "Requester confirmation closes once and stamps closure",
+      "requirements": "R06",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T11",
+      "name": "Rejection requires reason, preserves history and returns to work",
+      "requirements": "R06",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T12",
+      "name": "Successful events retain roles, states and timestamps",
+      "requirements": "R07",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T13",
+      "name": "CSV quotes special characters and neutralises formula cells",
+      "requirements": "R08",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.432Z"
+    },
+    {
+      "id": "T14",
+      "name": "Snapshot queue counts and clock-driven overdue changes",
+      "requirements": "R09",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.433Z"
+    },
+    {
+      "id": "T15",
+      "name": "Search and status filters combine, with empty result",
+      "requirements": "R09",
+      "result": "Pass",
+      "method": "Automated domain check",
+      "executedAt": "2026-10-09T09:08:40.433Z"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+tmp/
+.sites-runtime/
+node_modules/
+.env
+.env.*
+*.tar.gz
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.openai/

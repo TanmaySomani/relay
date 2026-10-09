@@ -1,0 +1,10 @@
+ID,Risk,Inherent,Mitigation,Owner,Residual,Gate
+K01,Operational or personal data entered into public demo,3 × 5 = 15 High,Synthetic-only warning; no attachments; no network submission; reset local data,Project author,1 × 5 = 5 Medium,Restrict the production intake and assess privacy before pilot
+K02,Demo role switch mistaken for access control,4 × 5 = 20 High,Explicit role simulation label; R11 and cross-user denial test as pilot gate,Security lead,2 × 5 = 10 High,Unaccepted for production; SSO and server enforcement required
+K03,Staff keep using separate email queues,4 × 3 = 12 High,"Champions, assisted intake, clear service channel and daily reconciliation",Process owner,2 × 3 = 6 Medium,Pilot adoption must reach 80% before expansion
+K04,Wrong priority or unrealistic target,3 × 4 = 12 High,Agree impact definitions; calibrate capacity; review breached high-priority faults daily,Coordinator,2 × 3 = 6 Medium,Sponsor validates targets before pilot
+K05,Fault marked resolved while service is still unavailable,3 × 4 = 12 High,Evidence plus requester confirmation; rejection returns to active work,ICT lead,1 × 4 = 4 Low,Test T09–T11 and monitor reopen rate
+K06,Inaccessible interface or exclusion of shift staff,3 × 4 = 12 High,"Keyboard checks, assisted intake, recorded training plus captioned materials",Change lead,2 × 3 = 6 Medium,Representative users must pass U01
+K07,Loss or alteration of records in browser storage,4 × 4 = 16 High,State openly that demo storage is disposable; production repository and restore tests,Platform owner,3 × 4 = 12 High,Unaccepted for production until U03 passes
+K08,"Unsupported tenant, connector cost or data location",3 × 4 = 12 High,"Confirm approved platform, licensing, residency, supplier terms and support model",Platform owner,2 × 4 = 8 Medium,No procurement or live tenant assumed
+K09,Misleading benefit or compliance claims,3 × 4 = 12 High,"Label invented baseline, proposed targets, executed checks and outstanding gates",Project author,1 × 4 = 4 Low,Do not present prototype checks as stakeholder sign-off

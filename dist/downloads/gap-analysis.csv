@@ -1,0 +1,8 @@
+Gap,Current,Problem,Improvement,Finding,Requirement,Measure
+G01,"Email, phone and spreadsheet intake",Incomplete information and duplicate entry,Structured form plus assisted intake in the same queue,"F02, F06","R01, R10","M01, M02"
+G02,Unowned spreadsheet rows,Faults wait between teams,Named technician and visible state transitions,F01,"R02, R03",M03
+G03,Priority is self-selected,Unequal treatment and hidden operational risk,Impact and urgency matrix with visible due time,F03,R04,M05
+G04,Closure by technician alone,Unresolved faults disappear from the backlog,Resolution evidence; requester confirms or rejects,F04,"R05, R06",M04
+G05,Overwritten spreadsheet cells,Weak accountability and unreliable reporting,Append event history; controlled export in target solution,F05,"R07, R08",M05
+G06,Review based on anecdotes,Repeated faults and benefits not evidenced,Queue measures and scheduled trend review,"F01, F02",R09,"M01, M03"
+G07,Unvalidated platform controls,"Privacy, access and retention risks",Agency assessments and release gates before production,F05,"R11, R12",M05

@@ -1,0 +1,77 @@
+{
+  "T01": [
+    "Fresh sample",
+    "Submit valid title, description and controlled fields",
+    "Unique reference, Submitted status and initial event"
+  ],
+  "T02": [
+    "Fresh sample",
+    "Submit whitespace, short text, overlong title and invalid unit or urgency",
+    "Each fails; dataset unchanged"
+  ],
+  "T03": [
+    "Fresh sample",
+    "Submit twice as Requester and Coordinator; attempt as Technician",
+    "Unique references; assisted intake labelled; Technician denied"
+  ],
+  "T04": [
+    "Submitted fault",
+    "Assign Alex T. as Coordinator",
+    "Assigned status, named owner and appended event"
+  ],
+  "T05": [
+    "Submitted fault",
+    "Attempt empty owner and Requester assignment",
+    "Rejected; state and history unchanged"
+  ],
+  "T06": [
+    "Submitted then assigned fault",
+    "Start work as Technician",
+    "In progress; third event"
+  ],
+  "T07": [
+    "Submitted fault",
+    "Attempt start, resolve, confirm and unsupported delete",
+    "Rejected; state unchanged"
+  ],
+  "T08": [
+    "Fresh sample for each combination",
+    "Submit all four High/Standard impact and urgency combinations",
+    "P1 4h, P2 24h, P2 24h, P3 72h"
+  ],
+  "T09": [
+    "In progress fault",
+    "Try short evidence and wrong role; then valid resolution as Technician",
+    "Invalid attempts denied; valid resolution awaits confirmation"
+  ],
+  "T10": [
+    "Awaiting confirmation",
+    "Attempt Technician confirmation; confirm as Requester; repeat",
+    "Only Requester closes; closedAt set; repeated confirmation denied"
+  ],
+  "T11": [
+    "Awaiting confirmation",
+    "Reject with short then valid reason; resolve again and confirm",
+    "Short reason denied; valid rejection returns to work and preserves history; eventual closure succeeds"
+  ],
+  "T12": [
+    "Progressed request",
+    "Read every event; attempt invalid confirmation",
+    "Role, state and timestamp retained; invalid action adds no event"
+  ],
+  "T13": [
+    "Seed queue and special text",
+    "Filter Northbank; export; exercise commas, quotes, line breaks and formula prefix",
+    "Only filtered requests; CSV escaped; formula text neutralised"
+  ],
+  "T14": [
+    "Seed queue at starting clock",
+    "Read counts; advance 24h; attempt invalid clock advance",
+    "6 open, 2 overdue, 1 awaiting, 2 closed; overdue becomes 4; invalid advance denied"
+  ],
+  "T15": [
+    "Seed queue",
+    "Search Riverbend + Submitted, reference, owner and absent text",
+    "2 combined matches; reference 1; owner 2; absent text 0"
+  ]
+}

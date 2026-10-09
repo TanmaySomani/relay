@@ -1,0 +1,28 @@
+{
+  "version": "1.1",
+  "date": "2026-10-09",
+  "environment": "Python 3.12 / Streamlit 1.65.0",
+  "command": "python -m unittest discover -s tests -p 'test_*.py' -v",
+  "result": "Pass",
+  "passed": 13,
+  "total": 13,
+  "workflowChecks": 9,
+  "appTestIntegrationChecks": 4,
+  "scope": [
+    "Seed queue, elapsed-time target ageing and priority matrix",
+    "Submission validation and atomic rejection of invalid transitions",
+    "Full request lifecycle including rejection, re-resolution and confirmation",
+    "Resolution evidence and rejection reason validation",
+    "Search, combined filters, CSV quoting and formula neutralisation",
+    "All four screens and all eight evidence sections render without exceptions",
+    "Actual Streamlit widgets for submission, assignment, rejection and closure",
+    "Reset, clock advancement and isolation between independent sessions"
+  ],
+  "storage": "Per-session in-memory state on Streamlit host; no shared persistent database",
+  "limitations": [
+    "Demo roles do not authenticate individuals or enforce request ownership",
+    "Automated tests are not stakeholder UAT or production sign-off",
+    "Full accessibility, security, resilience and performance assessments are not claimed",
+    "Original PDF evidence baseline covers the static prototype; this file records the Streamlit port"
+  ]
+}

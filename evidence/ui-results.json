@@ -1,0 +1,11 @@
+{
+  "id":"T16",
+  "result":"Pass",
+  "executedOn":"2026-10-09",
+  "method":"Self-executed browser integration review",
+  "notes":"Verified submit → assign → start → resolution → reject → second resolution → confirmed closure; short resolution rejected; browser reset and reload preserved eight records; 390 px layout had no page overflow; all form fields labelled; Tab and Escape operated intake dialog. Not full WCAG or screen-reader validation.",
+  "responsive":{"width":390,"documentWidth":390,"unlabelledFields":0},
+  "webmcp":"Read tool registered; Northbank query returned two records; invalid status rejected. Read-only tool has no record mutation.",
+  "consoleErrors":0,
+  "evidence":"confirmed-closure.jpg"
+}
