@@ -2,6 +2,8 @@
 
 A complete independent BA case study for routine ICT fault handling in a **fictional licensing support unit**. Prepared for the capability profile in QLD/702780/26, QPS Business Analyst AO5. No QPS affiliation, endorsement or access is claimed.
 
+**[Open the live Streamlit portfolio](https://relay-ba-portfolio.streamlit.app/)** · [One-page summary](dist/downloads/Relay-One-Page-Summary.pdf) · [Management briefing](dist/downloads/Relay-Management-Brief.pdf) · [Full evidence pack](dist/downloads/Relay-Portfolio-Pack.pdf)
+
 ## Run the Streamlit app
 
 Python 3.12 is recommended. The app needs no API key, credentials or external database.
@@ -75,7 +77,7 @@ python -m unittest discover -s tests -p 'test_*.py' -v
 
 The Streamlit checks cover all four screens and eight evidence sections, input validation, a complete assignment/rejection/confirmation lifecycle, filtering, clock advancement, reset and isolation between two sessions. See `evidence/streamlit-validation.json` for the executed result. These checks do not replace stakeholder UAT, accessibility conformance or production acceptance.
 
-The suite writes `evidence/project-data.json` from the authoring data and `evidence/test-results.json`. Browser observations are separately recorded in `evidence/ui-results.json`.
+The JavaScript suite writes `evidence/project-data.json` from the authoring data and `evidence/test-results.json`. Browser observations are separately recorded in `evidence/ui-results.json`.
 
 Authoring scripts require Python with `lxml`, `reportlab`, `pypdf` and `Pillow`:
 
